@@ -12,8 +12,11 @@ namespace ObserverPatternDemo
 
         public Observer(string name)
         {
+            Console.WriteLine("Whats your name?");
+            name = Console.ReadLine();
             ObserverName = name;
         }
+
 
         public void Update()
         {
